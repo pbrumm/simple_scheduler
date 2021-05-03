@@ -39,6 +39,7 @@ usage: simple_scheduler [-h] [--http-port 80-65535]
                         [--http-address HTTP_ADDRESS]
                         [--nd-settings NDSCHEDULER_SETTINGS_MODULE] [--debug]
                         [--logging-level LOGGING_LEVEL] [--encrypt]
+                        [--yaml-config YAML_CONFIG]
 
 NDscheduler - web based cron replacement
 
@@ -55,6 +56,8 @@ optional arguments:
                         logging level
   --encrypt, -e         Create hash value from password for use in
                         AUTH_CREDENTIALS.
+  --yaml-config YAML_CONFIG, -y YAML_CONFIG
+                        Path to yaml config file
 ```
 
 ## Docker
