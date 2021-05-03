@@ -14,7 +14,7 @@ virtual environment and install this library with it's dependencies in it.
 ```sh
 python3.7 -m venv .venv
 source .venv/bin/activate
-pip install -U .
+pip install -e git+https://github.com/palto42/simple_scheduler.git
 # run with default settings
 .venv/bin/simple_scheduler -s simple_scheduler.settings
 ```
