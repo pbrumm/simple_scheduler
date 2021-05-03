@@ -23,6 +23,15 @@ Open a web browser at http://localhost:8888
 
 ![simple_scheduler](simple_scheduler.png)
 
+### Sample jobs
+
+The reference implementation also comes with [several sample jobs](simple_scheduler/jobs).
+
+* AwesomeJob: it just prints out 2 arguments you pass in.
+* SlackJob: it sends a slack message periodically, for example, team standup reminder.
+* ShellJob: it runs an executable command, for example, run curl to crawl web pages.
+* CurlJob: it's like running [curl](http://curl.haxx.se/) periodically.
+
 ## CLI options
 
 ```txt
