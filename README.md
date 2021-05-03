@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](LICENSE.txt)
 
-This is the original reference implementation of [Nextdoorndscheduler](https://github.com/Nextdoor/ndscheduler).
+This is the original reference implementation of [Nextdoor/ndscheduler](https://github.com/Nextdoor/ndscheduler).
 
 It has been separated out in the fork [palto42/ndscheduler](https://github.com/palto42/ndscheduler) to make the code more maintainable.
 
@@ -47,3 +47,7 @@ optional arguments:
   --encrypt, -e         Create hash value from password for use in
                         AUTH_CREDENTIALS.
 ```
+
+## Docker
+
+The Dockerfile in the folder `./docker`has not yet been updated to work with this separate reference implementation.
