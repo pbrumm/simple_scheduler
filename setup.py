@@ -34,6 +34,7 @@ setup(
     install_requires=[
         "ndscheduler @ git+https://github.com/palto42/ndscheduler.git",
         "requests >= 2.27.1",
+        "construct",
         "apns @ git+https://github.com/djacobs/PyAPNs.git"
     ],
     entry_points={"console_scripts": ["simple_scheduler = simple_scheduler:main",]},
