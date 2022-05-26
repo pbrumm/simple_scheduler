@@ -32,7 +32,7 @@ setup(
     python_requires=">=3.6.4",
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
-        "ndscheduler @ git+https://github.com/palto42/ndscheduler.git",
+        "ndscheduler-fork @ git+https://github.com/palto42/ndscheduler.git",
         "requests >= 2.27.1",
         "construct",
         "apns @ git+https://github.com/djacobs/PyAPNs.git"
