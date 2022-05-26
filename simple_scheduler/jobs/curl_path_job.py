@@ -13,7 +13,7 @@ class CurlPathJob(job.JobBase):
 
     @classmethod
     def meta_info(cls):
-        url_name = os.environ.get("CURL_PATH_URL") || "http://localhost/api/v1/"
+        url_name = os.getenv("CURL_PATH_URL", "http://localhost/api/v1/")
         return {
             "job_class_string": "%s.%s" % (cls.__module__, cls.__name__),
             "notes": "This sends a HTTP GET request to %s" % (url_name),
@@ -28,7 +28,7 @@ class CurlPathJob(job.JobBase):
         }
 
     def run(self, path, *args, **kwargs):
-        url_name = os.environ.get("CURL_PATH_URL") || "http://localhost/api/v1/"
+        url_name = os.getenv("CURL_PATH_URL", "http://localhost/api/v1/")
         url = "%s%s" % (url_name, path)
         print("Start GET on url: %s" % (url))
 
