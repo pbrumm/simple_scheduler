@@ -2,7 +2,7 @@
 
 import logging
 import requests
-import io
+import os
 
 from ndscheduler.corescheduler import job
 
