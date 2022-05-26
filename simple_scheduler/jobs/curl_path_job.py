@@ -31,11 +31,13 @@ class CurlPathJob(job.JobBase):
         url_name = os.getenv("CURL_PATH_URL", "http://localhost/api/v1/")
         url = "%s%s" % (url_name, path)
         print("Start GET on url: %s" % (url))
-
-        session = requests.Session()
-        result = session.request(request_type, url, headers=None, data=None)
-        print("Calling GET on url: %s" % (url))
-        return result.text
+        try:
+            session = requests.Session()
+            result = session.request(request_type, url, headers=None, data=None)
+            return result.text
+        finally:
+            print("Finish GET on url: %s" % (url))
+        
 
 
 if __name__ == "__main__":
