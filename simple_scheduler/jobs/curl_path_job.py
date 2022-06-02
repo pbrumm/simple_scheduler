@@ -33,7 +33,7 @@ class CurlPathJob(job.JobBase):
         print("Start GET on url: %s" % (url))
         try:
             session = requests.Session()
-            result = session.request(request_type, url, headers=None, data=None)
+            result = session.request("GET", url, headers=None, data=None)
             return result.text
         finally:
             print("Finish GET on url: %s" % (url))
